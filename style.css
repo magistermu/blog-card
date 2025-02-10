@@ -11,7 +11,7 @@
     --space150: 0.75rem;
     --space300: 1.25rem;
 
-    --radius: 1rem;
+    --radius: 1.25rem;
 
     /* fonts */
     --ff-base: "Figtree", serif;
@@ -47,13 +47,13 @@ body {
     box-shadow: 8px 8px black;
 }
 
-.course-image {
-    border-radius: var(--radius);
+.course-image-wrapper {
+    border-radius: calc(var(--radius)/2);
     overflow: hidden;
     object-fit: cover;
 }
 
-.course-image img {
+.course-image {
     width: 110%;
 }
 
@@ -91,7 +91,7 @@ body {
 .category {
     background-color: var(--primary);
     padding: var(--space50) var(--space150);
-    border-radius: calc(var(--radius)/3);
+    border-radius: calc(var(--radius)/4);
 
     font-size: var(--fs-small);
     font-weight: var(--fw-bold);
